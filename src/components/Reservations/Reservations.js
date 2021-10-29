@@ -23,6 +23,7 @@ const Reservations = ({ setReservations, reservations, getSelectedReservation, i
                         titleAccess='הוספה'
                     />
                 </div>
+                <hr style={{ borderTop: '2px solid #fcb948' }} />
 
                 <Reservation
                     setReservations={setReservations}
