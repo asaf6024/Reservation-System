@@ -1,0 +1,22 @@
+{
+  "reservations": [
+    {
+      "id": 269,
+      "firstName": "אסף",
+      "lastName": "אלמוג",
+      "dateOfReservation": "2021-10-29"
+    },
+    {
+      "id": 671,
+      "firstName": "ליטל",
+      "lastName": "אלמוג",
+      "dateOfReservation": "2021-10-29"
+    },
+    {
+      "id": 984,
+      "firstName": "לירון",
+      "lastName": "אלמוג",
+      "dateOfReservation": "2021-10-31"
+    }
+  ]
+}

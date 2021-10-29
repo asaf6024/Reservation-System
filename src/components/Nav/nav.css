@@ -1,0 +1,28 @@
+.nav {
+  position: fixed;
+  background: #4e71ff;
+  direction: ltr;
+  right: 0;
+  left: 0;
+  top: 0;
+  padding: 0 !important;
+  margin: 0 !important;
+  font-weight: 300;
+  box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+  z-index: 2;
+}
+.nav .navItem {
+  color: white !important;
+}
+.nav .grpupImage {
+  height: 100px;
+  margin: auto;
+}
+@media only screen and (max-width: 600px) {
+  .nav .grpupImage {
+    height: 50px;
+  }
+  .nav .navItem {
+    font-size: small;
+  }
+}

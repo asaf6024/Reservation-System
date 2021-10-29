@@ -1,0 +1,16 @@
+.cardOfReservarion {
+  padding: 15px;
+}
+
+.cardOfReservarion .reservarionIcons {
+  float: left;
+}
+.cardOfReservarion .reservarionIcons svg {
+  cursor: pointer;
+}
+.cardOfReservarion .reservarionIcons svg:hover {
+  color: blue;
+}
+.cardOfReservarion h2 {
+  text-align: center;
+}
