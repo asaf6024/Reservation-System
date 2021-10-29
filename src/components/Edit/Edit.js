@@ -151,7 +151,6 @@ const Edit = ({ reservationSelected, isUpdate, setIsUpdate, setReservations, res
                             type='text'
                             id="firstName"
                             name='firstName'
-                            placeholder='שם פרטי'
                             value={firstName}
                             onChange={e => setFirstName(e.target.value)}
                             ref={inputRef}
@@ -175,7 +174,6 @@ const Edit = ({ reservationSelected, isUpdate, setIsUpdate, setReservations, res
                             required
                             type='text'
                             id="lastName"
-                            placeholder='שם משפחה'
                             name='lastName'
                             value={lastName}
                             onChange={e => setLastName(e.target.value)}
@@ -201,13 +199,12 @@ const Edit = ({ reservationSelected, isUpdate, setIsUpdate, setReservations, res
                             required
                             type='date'
                             id='dateOfReservation'
-                            placeholder='Last Name'
                             name='dateOfReservation'
                             value={dateOfReservation}
                             onChange={e => setDateOfReservation(e.target.value)}
                             startAdornment={
                                 <InputAdornment position="start">
-                                    <DateRangeOutlined />
+                                    {/* <DateRangeOutlined /> */}
                                 </InputAdornment>
                             }
                         />

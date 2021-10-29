@@ -9,7 +9,7 @@ form {
   box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%) !important;
 }
 form .labelForm {
-  right: 0 !important;
+  right: -50px !important;
 }
 form .inputForm {
   display: inline-block;
@@ -33,5 +33,14 @@ form .formButton button {
 @media only screen and (max-width: 600px) {
   form {
     width: 100%;
+  }
+  form .formButton {
+    margin-bottom: 15px;
+  }
+  .editRow {
+    margin-top: 20px;
+  }
+  form .inputForm {
+    display: inline-flex !important;
   }
 }

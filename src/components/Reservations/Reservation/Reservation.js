@@ -36,6 +36,7 @@ const Reservation = ({ setReservations, reservations, getSelectedReservation, se
                     />
                 </div>
                 <h3>הזמנה {counter}</h3>
+
                 <p>{res.firstName} {res.lastName}</p>
                 <p>{new Date(res.dateOfReservation).toLocaleDateString('he-IL', { hour12: false })}</p>
                 <hr />

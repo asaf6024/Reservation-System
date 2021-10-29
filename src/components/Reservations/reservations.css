@@ -17,6 +17,7 @@
 }
 @media only screen and (max-width: 600px) {
   .reservationsList {
-    height: 270px;
+    height: 250px;
+    overflow: auto;
   }
 }

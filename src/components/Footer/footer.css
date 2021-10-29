@@ -26,3 +26,9 @@
   font-weight: bold;
   color: #fcb948;
 }
+@media only screen and (max-width: 600px) {
+  .footer {
+    margin-top: 20px;
+    position: relative;
+  }
+}
