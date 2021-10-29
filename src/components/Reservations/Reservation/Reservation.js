@@ -30,7 +30,7 @@ const Reservation = ({ setReservations, reservations, getSelectedReservation, se
                         onClick={() => deleteReservation(res.id)}
                         titleAccess='מחיקה'
                     />
-                    <EditIcon Rounded
+                    <EditIcon
                         onClick={() => getSelectedReservation(res)}
                         titleAccess='עריכה'
                     />

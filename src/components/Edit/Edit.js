@@ -10,7 +10,6 @@ import InputLabel from '@mui/material/InputLabel';
 import InputAdornment from '@mui/material/InputAdornment';
 import FormControl from '@mui/material/FormControl';
 import AccountCircle from '@mui/icons-material/AccountCircle';
-import DateRangeOutlined from '@mui/icons-material/DateRangeOutlined';
 import Button from '@mui/material/Button';
 
 
@@ -131,7 +130,7 @@ const Edit = ({ reservationSelected, isUpdate, setIsUpdate, setReservations, res
     }
 
     return (
-        <Grid container lg={8} md={8} sm={8} xs={12} className='editRow'>
+        <Grid item lg={8} md={8} sm={8} xs={12} className='editRow'>
 
             <form onSubmit={updateOrAddReservation}>
 
@@ -204,7 +203,6 @@ const Edit = ({ reservationSelected, isUpdate, setIsUpdate, setReservations, res
                             onChange={e => setDateOfReservation(e.target.value)}
                             startAdornment={
                                 <InputAdornment position="start">
-                                    {/* <DateRangeOutlined /> */}
                                 </InputAdornment>
                             }
                         />
