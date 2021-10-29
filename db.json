@@ -2,21 +2,21 @@
   "reservations": [
     {
       "id": 269,
-      "firstName": "אסף",
-      "lastName": "אלמוג",
+      "firstName": "ישראל",
+      "lastName": "ישראלי",
       "dateOfReservation": "2021-10-29"
     },
     {
-      "id": 671,
-      "firstName": "ליטל",
-      "lastName": "אלמוג",
-      "dateOfReservation": "2021-10-29"
+      "id": 560,
+      "firstName": "ליאור",
+      "lastName": "לוי",
+      "dateOfReservation": "2021-10-30"
     },
     {
-      "id": 984,
-      "firstName": "לירון",
-      "lastName": "אלמוג",
-      "dateOfReservation": "2021-10-31"
+      "id": 853,
+      "firstName": "רוני",
+      "lastName": "כהן",
+      "dateOfReservation": "2021-10-27"
     }
   ]
 }

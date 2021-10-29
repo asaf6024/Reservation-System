@@ -1,4 +1,9 @@
 import React, { useEffect, useState, useRef } from 'react'
+
+//css
+import './edit.css'
+
+//MUI
 import { Grid } from "@material-ui/core";
 import Input from '@mui/material/Input';
 import InputLabel from '@mui/material/InputLabel';
@@ -8,7 +13,6 @@ import AccountCircle from '@mui/icons-material/AccountCircle';
 import DateRangeOutlined from '@mui/icons-material/DateRangeOutlined';
 import Button from '@mui/material/Button';
 
-import './edit.css'
 
 const Edit = ({ reservationSelected, isUpdate, setIsUpdate, setReservations, reservations }) => {
     const [headline, setHeadline] = useState('הזמנה חדשה')
@@ -69,7 +73,7 @@ const Edit = ({ reservationSelected, isUpdate, setIsUpdate, setReservations, res
             dateOfReservation
         }
 
-        //api for update selected reservation
+        //api call for update selected reservation
         const res = await fetch(`http://localhost:5000/reservations/${id}`, {
             method: 'PUT',
             headers: {
@@ -107,7 +111,7 @@ const Edit = ({ reservationSelected, isUpdate, setIsUpdate, setReservations, res
             dateOfReservation
         }
 
-        //הקריאה לשרת לבקשת יצירה
+        //api call for add
         const res = await fetch(`http://localhost:5000/reservations/`, {
             method: 'POST',
             headers: {
@@ -119,7 +123,7 @@ const Edit = ({ reservationSelected, isUpdate, setIsUpdate, setReservations, res
 
         const data = await res.json()
 
-        //עדכון הסטייט שמכיל את המידע מהגייסון שמשכנו מהשרת
+        //update reservations STATE
         setReservations([...reservations, data])
 
         initialInputs()
@@ -130,7 +134,6 @@ const Edit = ({ reservationSelected, isUpdate, setIsUpdate, setReservations, res
         <Grid container lg={8} md={8} sm={8} xs={12} className='editRow'>
 
             <form onSubmit={updateOrAddReservation}>
-
 
                 <Grid item lg={12} xs={12}>
                     <h1>{headline} {id}</h1>
@@ -162,7 +165,6 @@ const Edit = ({ reservationSelected, isUpdate, setIsUpdate, setReservations, res
                 </Grid>
 
                 <Grid item lg={6} md={6} xs={12} className='inputForm'>
-
                     <FormControl variant="standard">
 
                         <InputLabel htmlFor="lastName" className='labelForm'>
@@ -211,10 +213,10 @@ const Edit = ({ reservationSelected, isUpdate, setIsUpdate, setReservations, res
                         />
                     </FormControl>
                 </Grid>
-                <Grid item lg={12} md={12} xs={12} className='formButton'>
-                    {/* <input type='submit' value={isUpdate ? 'עדכון' : 'הוספה'} /> */}
-                    <Button className='submitForm' type='submit' variant="contained">{isUpdate ? 'עדכון' : 'הוספה'}</Button>
 
+                <Grid item lg={12} md={12} xs={12} className='formButton'>
+
+                    <Button className='submitForm' type='submit' variant="contained">{isUpdate ? 'עדכון' : 'הוספה'}</Button>
                 </Grid>
 
             </form >

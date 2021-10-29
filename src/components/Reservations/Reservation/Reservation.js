@@ -1,8 +1,10 @@
 import React from 'react'
-import { Card } from '@material-ui/core'
+//css
 import './reservation.css'
-import HighlightOffIcon from '@mui/icons-material/HighlightOff';
+//components
 import EditIcon from '@mui/icons-material/Edit';
+//MUI
+import HighlightOffIcon from '@mui/icons-material/HighlightOff';
 
 const Reservation = ({ setReservations, reservations, getSelectedReservation, setIsUpdate }) => {
     let counter = 0;
@@ -16,8 +18,11 @@ const Reservation = ({ setReservations, reservations, getSelectedReservation, se
         setIsUpdate(false)
     }
 
-    const printReservation = reservations.map((res) => {
+    const printReservation = reservations.sort((a, b) => {
+        return new Date(a.dateOfReservation) - new Date(b.dateOfReservation)
+    }).map((res) => {
         counter++;
+
         return (
             <React.Fragment key={res.id}>
                 <div className='reservarionIcons'>
@@ -33,7 +38,6 @@ const Reservation = ({ setReservations, reservations, getSelectedReservation, se
                 <h3>הזמנה {counter}</h3>
                 <p>{res.firstName} {res.lastName}</p>
                 <p>{new Date(res.dateOfReservation).toLocaleDateString('he-IL', { hour12: false })}</p>
-
                 <hr />
             </React.Fragment >
         )

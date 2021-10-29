@@ -1,12 +1,18 @@
 import React, { useState, useEffect } from 'react'
-import logo from './logo.svg';
+
+//css
 import './App.css';
-import Reservations from './components/Reservations/Reservations';
+
+//components
 import Nav from './components/Nav/Nav'
-import { Container } from '@mui/material';
+import Reservations from './components/Reservations/Reservations';
 import Edit from './components/Edit/Edit';
-import { Grid } from "@material-ui/core";
 import Footer from './components/Footer/Footer';
+
+//MUI
+import { Container } from '@mui/material';
+import { Grid } from "@material-ui/core";
+
 function App() {
   const [reservations, setReservations] = useState([])
   const [reservationSelected, setReservationSelected] = useState([])

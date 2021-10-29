@@ -1,8 +1,12 @@
 import * as React from 'react';
+//css
+import './nav.css'
+
+//MUI
 import Box from '@mui/material/Box';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
-import './nav.css'
+
 const Nav = () => {
     const [value, setValue] = React.useState(0);
 
@@ -27,8 +31,6 @@ const Nav = () => {
             <Tabs value={value} onChange={handleChange} aria-label="nav tabs example">
                 <LinkTab label="Home Quiz" href="/" className='navItem' />
                 <img src='/Group.png' className='grpupImage' />
-                {/* <LinkTab label="Page Two" href="/trash" />
-                <LinkTab label="Page Three" href="/spam" /> */}
             </Tabs>
         </Box>
     );
