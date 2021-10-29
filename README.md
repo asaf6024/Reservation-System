@@ -7,8 +7,7 @@ Using a server library for API requsets:
 
 - **json-server**
 
-(https://github.com/asaf6024/delawvery-asafblob/master/public/images/delawvery.JPG)
-
+![Home Page](https://github.com/asaf6024/delawvery-asaf/blob/master/public/delawvery.JPG)
 
 ## Getting started
 
