@@ -34,19 +34,24 @@ const Reservations = ({ setReservations, reservations, getSelectedReservation, i
                         />
                     </div>
 
-                    <ControlPointIcon className='addReservationBtn'
-                        onClick={() => initialNewReservation()}
-                        titleAccess='הוספה'
-                    />
-                    <SortIcon className='addReservationBtn'
-                        onClick={() => sortType === 'newFirst' ? setSortType('oldFirst') : setSortType('newFirst')}
-                    />
-                    <span>
-                        {
-                            sortType === null ? '' :
-                                sortType === 'newFirst' ? 'מהחדש לישן' : 'מהישן לחדש'
-                        }
-                    </span>
+                    <div className='rowOfButtons'>
+                        <ControlPointIcon className='addReservationBtn'
+                            onClick={() => initialNewReservation()}
+                            titleAccess='הוספה'
+                        />
+                        <div className='sortBtn'>
+                            <SortIcon
+                                onClick={() => sortType === 'newFirst' ? setSortType('oldFirst') : setSortType('newFirst')}
+                            />
+                            <br />
+                            <span style={{}}>
+                                {
+                                    sortType === null ? '' :
+                                        sortType === 'newFirst' ? 'מהחדש לישן' : 'מהישן לחדש'
+                                }
+                            </span>
+                        </div>
+                    </div>
                 </div>
                 <hr style={{ borderTop: '2px solid #fcb948' }} />
 

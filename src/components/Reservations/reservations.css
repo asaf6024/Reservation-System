@@ -9,13 +9,22 @@
 .mainDetailsOfReservations {
   text-align: center;
 }
+.mainDetailsOfReservations .rowOfButtons {
+  display: flex;
+}
+.mainDetailsOfReservations .rowOfButtons .addReservationBtn,
+.mainDetailsOfReservations .rowOfButtons .sortBtn {
+  flex: 1;
+}
 .mainDetailsOfReservations h2 {
   margin: 0;
 }
-.mainDetailsOfReservations .addReservationBtn {
+.mainDetailsOfReservations .addReservationBtn,
+.mainDetailsOfReservations .sortBtn svg {
   cursor: pointer;
 }
-.mainDetailsOfReservations .addReservationBtn:hover {
+.mainDetailsOfReservations .addReservationBtn:hover,
+.mainDetailsOfReservations .rowOfButtons .sortBtn svg:hover {
   color: blue;
 }
 @media only screen and (max-width: 600px) {
