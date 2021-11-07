@@ -69,10 +69,11 @@ const Reservations = ({ setReservations, reservations, getSelectedReservation, i
                                     || res.dateOfReservation.includes(search)
                                 )
                                     return res;
-                            }).sort((a, b) => {
+                            })
+                            .sort((a, b) => {
                                 return sortType === 'newFirst' ?
                                     new Date(b.dateOfReservation) - new Date(a.dateOfReservation)
-                                    : new Date(a.dateOfReservation) - new Date(b.dateOfReservation)
+                                    : sortType !== null && new Date(a.dateOfReservation) - new Date(b.dateOfReservation)
                             })
                     }
                     getSelectedReservation={getSelectedReservation}
