@@ -21,11 +21,10 @@ const Edit = ({ reservationSelected, isUpdate, setIsUpdate, setReservations, res
     const [dateOfReservation, setDateOfReservation] = useState('')
     const inputRef = useRef(null);
 
-    //iniutal selected a reservation by user
+    //initial selected a reservation by user
     useEffect(() => {
 
         if (reservationSelected.length > 0) {
-            console.log('in up')
             inputRef.current.focus();
             setIsUpdate(true)
             reservationSelected.map(res => {

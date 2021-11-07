@@ -9,6 +9,9 @@
 .mainDetailsOfReservations {
   text-align: center;
 }
+.mainDetailsOfReservations h2 {
+  margin: 0;
+}
 .mainDetailsOfReservations .addReservationBtn {
   cursor: pointer;
 }

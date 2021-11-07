@@ -7,6 +7,9 @@
 .cardOfReservarion .reservarionIcons {
   float: left;
 }
+.cardOfReservarion .active {
+  background: red !important;
+}
 .cardOfReservarion p,
 .cardOfReservarion h4 {
   margin: 2px;

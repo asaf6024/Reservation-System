@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 //css
 import './reservation.css'
 //components
@@ -6,8 +6,16 @@ import EditIcon from '@mui/icons-material/Edit';
 //MUI
 import HighlightOffIcon from '@mui/icons-material/HighlightOff';
 
-const Reservation = ({ setReservations, reservations, getSelectedReservation, setIsUpdate }) => {
+const Reservation = ({ sortType, setReservations, reservations, getSelectedReservation, setIsUpdate }) => {
     let counter = 0;
+
+    // useEffect(() => {
+    //     reservations.sort((a, b) => {
+    //         return sortType === 'newFirst' ?
+    //             new Date(b.dateOfReservation) - new Date(a.dateOfReservation)
+    //             : new Date(a.dateOfReservation) - new Date(b.dateOfReservation)
+    //     })
+    // })
 
     const deleteReservation = async (id) => {
         await fetch(`http://localhost:5000/reservations/${id}`, {
@@ -18,9 +26,7 @@ const Reservation = ({ setReservations, reservations, getSelectedReservation, se
         setIsUpdate(false)
     }
 
-    const printReservation = reservations.sort((a, b) => {
-        return new Date(a.dateOfReservation) - new Date(b.dateOfReservation)
-    }).map((res) => {
+    const printReservation = reservations.map((res, index) => {
         counter++;
 
         return (
@@ -39,7 +45,7 @@ const Reservation = ({ setReservations, reservations, getSelectedReservation, se
 
                 <p>{res.firstName} {res.lastName}</p>
                 <p>{new Date(res.dateOfReservation).toLocaleDateString('he-IL', { hour12: false })}</p>
-                <hr />
+                {index !== reservations.length - 1 && <hr />}
             </React.Fragment >
         )
     })

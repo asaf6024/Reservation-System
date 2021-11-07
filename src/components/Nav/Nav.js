@@ -29,7 +29,7 @@ const Nav = () => {
     return (
         <Box sx={{ width: '100%' }} className='nav'>
             <Tabs value={value} onChange={handleChange} aria-label="nav tabs example">
-                <LinkTab label="Home Quiz" href="/" className='navItem' />
+                <LinkTab label="Reservation System" href=" /" className='navItem' />
                 <img src='/Group.png' className='grpupImage' alt='group' />
             </Tabs>
         </Box>
