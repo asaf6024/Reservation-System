@@ -11,6 +11,8 @@
 }
 .mainDetailsOfReservations .rowOfButtons {
   display: flex;
+  width: 50%;
+  margin: auto;
 }
 .mainDetailsOfReservations .rowOfButtons .addReservationBtn,
 .mainDetailsOfReservations .rowOfButtons .sortBtn {
