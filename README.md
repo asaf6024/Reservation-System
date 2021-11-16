@@ -7,8 +7,7 @@ Using a server library for API requsets:
 
 - **json-server**
 
-![Reservation Syst](https://user-images.githubusercontent.com/33829557/141957242-975c842e-e414-4005-98b5-1382153aab11.gif)
-
+![Reservation Sytem](https://user-images.githubusercontent.com/33829557/141959285-cdcfdbdf-09c5-41ba-9287-9fe7b3ea94fe.gif)
 
 ## Getting started
 
