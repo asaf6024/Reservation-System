@@ -3,7 +3,7 @@
 
 A simple React app that displays a reservation list.
 
-Using a server library for API requsets:
+Using a local server library for HTTP requsets:
 
 - **json-server**
 
